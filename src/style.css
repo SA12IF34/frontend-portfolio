@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(20, 20, 20);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-color);
+  width: 100%;
+  height: 100vh;
+
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+main>div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  padding-bottom: 20px;
+  transition: 0.6s;
+}
+
+main>div.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.changeable {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  transition: 0.6s;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.none {
+  display: none !important;
+}
+
+h1 {
+  font-size: 2.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+#btns {
+  width: 100%;
+  max-width: 700px;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 150px;
+  height: 80px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+}
+
+#contact {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: max-content;
+  height: max-content;
+  z-index: 1000;
+  transition: 0.3s ease-out;
+}
+
+.contactTop {
+  bottom: 95% !important;
+  translate: 0 100%;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.skills>textarea {
+  width: 100%;
+  max-width: 50%;
+  min-width: 300px;
+  height: 100%;
+  overflow: auto;
+  font-size: 2em;
+  line-height: 1.5;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  resize: none;
+  z-index: -10;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.skills>div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.projects {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 150px;
+  right: 100%;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.projectsAppear {
+  right: 0% !important;
+}
+
+.projects>div {
+  width: 130px;
+  height: 80px;
+  background-color: #e9e9e9;
+  margin: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  font-size: 1.5em;
+  font-weight: 500;
+  position: relative;
+}
+
+.projects a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.back {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0%;
+  translate: 100% 0;
+  top: 0%;
+  transition: 0.5s ease;
+}
+
+.back button {
+  border: 2px solid black;
+}
