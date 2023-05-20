@@ -28,7 +28,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(innerWidth, innerHeight);
 renderer.setClearColor(0x000000, 0);
 if (window.matchMedia('(min-width: 768px)').matches) {
-  renderer.setPixelRatio(2);
+  renderer.setPixelRatio(1.5);
 } else if (window.matchMedia('(min-width: 1280px)').matches) {
   renderer.setPixelRatio(window.devicePixelRatio);
 }
