@@ -206,12 +206,12 @@ function animate() {
 
 
   if (move === 'first' || move === 'all') {
-    camera.position.x < 10 ? camera.position.x += 0.0375 : '';
-    camera.position.y < 1 ? camera.position.y += 0.0375 : '';
-    camera.position.z > -4 ? camera.position.z -= 0.15 : '';
-    x < 6 ? x += 0.1125 : '';
-    y < 12 ? y += 0.225 : '';
-    z < -16 ? z += 0.075 : '';
+    camera.position.x < 10 ? camera.position.x += 0.75 : '';
+    camera.position.y < 1 ? camera.position.y += 0.075 : '';
+    camera.position.z > -4 ? camera.position.z -= 0.3 : '';
+    x < 6 ? x += 0.225 : '';
+    y < 12 ? y += 0.45 : '';
+    z < -16 ? z += 0.15 : '';
 
     if (x >= 6 && y >= 12 && z >= -16) {
 
