@@ -178,12 +178,12 @@ function animate() {
 
 
   if (move === 'backskills') {
-    camera.position.y > 1 ? camera.position.y -= 0.5 : '';
-    camera.position.z < -4 ? camera.position.z += 0.3 : '';
-    x > 6 ? x -= 0.5 : '';
-    y < 12 ? y += 0.1 : '';
+    camera.position.y > 1 ? camera.position.y -= 0.25 : '';
+    camera.position.z < -4 ? camera.position.z += 0.15 : '';
+    x > 6 ? x -= 0.25 : '';
+    y < 12 ? y += 0.05 : '';
     if (window.matchMedia('(max-width: 900px)').matches) {
-      x2 > 8 ? x2 -= 0.35 : '';
+      x2 > 8 ? x2 -= 0.3 : '';
       obj3D.position.set(x2, 8, -16)
     }
     if (x <= 6 && y >= 12) {
@@ -240,13 +240,13 @@ function animate() {
 
 
   if (move === 'second') {
-    camera.position.y < 12 ? camera.position.y += 0.5 : '';
-    camera.position.z > -8 ? camera.position.z -= 0.3 : '';
-    x < 16 ? x += 0.5 : '';
-    y > 10 ? y -= 0.1 : '';
+    camera.position.y < 12 ? camera.position.y += 0.25 : '';
+    camera.position.z > -8 ? camera.position.z -= 0.15 : '';
+    x < 16 ? x += 0.25 : '';
+    y > 10 ? y -= 0.05 : '';
 
     if (window.matchMedia('(max-width: 900px)').matches) {
-      x2 < 16 ? x2 += 0.35 : '';
+      x2 < 16 ? x2 += 0.3 : '';
       console.log(x2)
       obj3D.position.set(x2, 8, -16)
     }
