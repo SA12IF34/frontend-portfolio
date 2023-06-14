@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#skills">skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div id="home" class="hero">
+          <div>
+            <h1 class="headLine">hello, my name is saif.<br>I'm a frontend web developer .</h1>
+            <br>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Inventore cupiditate, itaque corporis officia veniam non 
+              sunt tenetur consequatur ducimus odio temporibus, 
+              quia</p>
+            <br>
+            <div class="btns">
+              <button id="projectsBtn">projects</button>
+              <button id="skillsBtn">skills</button>
+            </div>
+          </div>
+        </div>
+        <div id="skills" class="skills">
+          <h2>I have master skills</h2>
+          <br>
+          <div class="skillsContainer">
+            <div class="rookie">
+              <span>
+                JavaScript
+              </span>
+              <span>
+                CSS
+              </span>
+              <span>
+                HTML
+              </span>
+            </div>
+            <div class="elite">
+              <span>
+                TailwindCSS
+              </span>
+              <span>
+                ReactJs
+              </span>
+              <span>
+                NPM
+              </span>
+            </div>
+            <div class="master">
+              <span>
+                SocketIo
+              </span>
+              <span>
+                TypeScript
+              </span>
+              <span>
+                Using UI Libraries
+              </span>
+              <span>
+                NextJs
+              </span>
+              <span>
+                ThreeJs
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="projects">
+          <h2>And projects to showcase my skills</h2>
+          <br>
+          <div class="projectsContainer">
+            <div class="apps ai">
+              <h3>AI Apps</h3>
+              
+              <a target="_blank" href="https://chat.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/chat.png" alt="chat app project image" />
+                  <div class="appName">
+                    <p>chat app usig chatGPT API</p>
+                  </div>
+                </div>
+              </a>
+              <a target="_blank" href="https://translate.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/translator.png" alt="ai powered translator project image" />
+                  <div class="appName">
+                    <p>AI powered translator</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="apps beautifulDesign">
+              <h3>Beautiful Design</h3>
+              
+              <a target="_blank" href="https://portfolio.landing-page.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/landingPage.png" alt="landing page portfolio project image" />
+                  <div class="appName">
+                    <p>landing page portfolio</p>
+                  </div>
+                </div>
+              </a>
+              <a target="_blank" href="https://steelmind.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/steelMind.png" alt="steelmind organization website project image" />
+                  <div class="appName">
+                    <p>steelmind organization website</p>
+                  </div>
+                </div>
+              </a>
+              <a target="_blank" href="https://fate-series.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/fate.png" alt="fate page project image" />
+                  <div class="appName">
+                    <p>unofficial fate page</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="apps online">
+              <h3>Online</h3>
+              
+              <a target="_blank" href="https://rock-paper-scissors.saifchan.site/">
+                <div class="app">
+                  <img src="/imgs/rps.png" alt="online rock paper scissors project image" />
+                  <div class="appName">
+                    <p>online rock paper scissors</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contact">
+          <h2>Contact me</h2>
+          <br>
+          <div>
+            <div class="info">
+              <h3>Phone No. : +962799562745</h3>
+              <h3>Email : saifchan@mail.com</h3>
+              <a href="">
+                <h3>LinkedIn Profile</h3>
+              </a>
+              <a href="">
+                <h3>GitHub Profile</h3>
+              </a>
+              <a href="">
+                <h3>Upwork Profile</h3>
+              </a>
+            </div>
+            <div class="form">
+              <form action="https://api.web3forms.com/submit"
+                  method="POST" id="send-message">
+                  <input type="hidden" name="access_key"
+                      value="a51e0962-12dd-43c9-8339-021ca55d9582" />
+                  <input type="hidden" name="redirect"
+                      value="http://localhost:5173/" />
+                  <input type="text" name="name" id="name"
+                      placeholder="your name" />
+                  <input type="email" name="email" id='email'
+                      placeholder="your email" />
+                  <br />
+                  <input type="text" name="subject"
+                      id='subject' placeholder="subject" />
+                  <br />
+                  <textarea name="body" id="message" 
+                       placeholder="your message"></textarea>
+                  <br />
+                  <input id="submit" type="submit" value="submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
