@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GodRaysEffect, RenderPass, EffectPass, EffectComposer } from 'postprocessing';
-import { randInt } from 'three/src/math/MathUtils';
+import { randInt } from 'three/src/math/MathUtils.js';
 
 
 let container = document.getElementById('app') as HTMLDivElement;
@@ -20,6 +20,7 @@ let container = document.getElementById('app') as HTMLDivElement;
 //   window.location.reload();
 // }
 
+randInt
 
 const pi: number = Math.PI;
 let rotateDeg: number = 0.005;
