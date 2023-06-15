@@ -67,6 +67,9 @@ header a {
   text-shadow: 1px 1px 3px black;
 }
 
+h1, h2, h3, p {
+  text-shadow: 1px 1px 3px black;
+}
 
 main {
   width: 100%;
@@ -88,9 +91,6 @@ main {
   line-height: 1.5;
 }
 
-.headLine, .desc {
-  text-shadow: 1px 1px 3px black;
-}
 .desc {
   width: 95%;
   max-width: 540px;
@@ -177,6 +177,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  text-shadow: 1px 1px 3px black;
 }
 .rookie::after {
   content: 'rookie';
@@ -288,6 +289,7 @@ input,textarea {
   outline: none;
   border-radius: 7px;
   color: whitesmoke;
+  text-shadow: 1px 1px 3px black;
 }
 
 input {
