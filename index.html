@@ -27,20 +27,24 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <div id="home" class="hero">
+      <main id="home">
+        <div class="hero">
           <div>
             <h1 class="headLine">hello, my name is saif.<br>I'm a frontend web developer .</h1>
-            <br>
             <p class="desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Inventore cupiditate, itaque corporis officia veniam non 
               sunt tenetur consequatur ducimus odio temporibus, 
-              quia</p>
+              quia
+            </p>
             <br>
             <div class="btns">
-              <button id="projectsBtn">projects</button>
-              <button id="skillsBtn">skills</button>
+              <a style="width: max-content; height: max-content;" href="#projects">
+                <button id="projectsBtn">projects</button>
+              </a>
+              <a style="width: max-content; height: max-content;" href="#skills">
+                <button id="skillsBtn">skills</button>
+              </a>
             </div>
           </div>
         </div>
@@ -198,5 +202,6 @@
       </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/background.ts"></script>
   </body>
 </html>

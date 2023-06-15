@@ -10,6 +10,10 @@
   --bg-color: rgb(20, 20, 20);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--bg-color);
@@ -36,9 +40,14 @@ canvas {
 header {
   width: 100%;
   height: max-content;
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: end;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  transition: 0.2s;
+  z-index: 9999;
 }
 header>nav {
   width: max-content;
@@ -55,7 +64,9 @@ header ul li {
 header a {
   color: white;
   text-decoration: none;
+  text-shadow: 1px 1px 3px black;
 }
+
 
 main {
   width: 100%;
@@ -63,6 +74,7 @@ main {
   min-height: 100vh;
   height: max-content;
   padding: 20px;
+  padding-top: 70px;
   overflow-x: hidden;
   margin: auto;
 }
@@ -72,15 +84,41 @@ main {
   width: max-content;
   max-width: 100%;
   min-height: 100vh;
-  padding-top: 30px;
+  padding-top: 50px;
   line-height: 1.5;
 }
-.hero .desc {
+
+.headLine, .desc {
+  text-shadow: 1px 1px 3px black;
+}
+.desc {
   width: 95%;
   max-width: 540px;
-  margin-left: 10px;
-  
+  margin: 10px;
 }
+
+.btns {
+  width: 100%;
+  max-width: 360px;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 150px;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+}
+
 
 
 .skills, 
@@ -270,29 +308,6 @@ textarea {
   height: 40px;
   cursor: pointer;
 }
-
-.btns {
-  width: 100%;
-  max-width: 360;
-  height: max-content;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-button {
-  width: 150px;
-  height: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 1.5em;
-  text-align: center;
-  cursor: pointer;
-}
-
 
 
 @media screen and (min-width: 1281px) {
