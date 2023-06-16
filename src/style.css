@@ -160,7 +160,7 @@ button {
   border: 2px solid white;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 1px 0px black inset, -4px -1px 1px 0px black inset;
+  box-shadow: 1px 1px 1px 0px black inset, -1px -1px 1px 0px black inset;
 }
 
 .rookie span,
@@ -286,6 +286,19 @@ button {
   height: max-content;
 }
 
+form {
+  position: relative;
+}
+form::after {
+  content: 'Send a Message';
+  font-size: 1.17em;
+  position: absolute;
+  bottom: 101%;
+  left: 0;
+  text-shadow: 1px 1px 10px black;
+  margin-left: 5px;
+}
+
 input,textarea {
   margin: 5px;
   background-color: #ffffff4c;
@@ -347,6 +360,11 @@ textarea {
 @media screen and (max-width: 460px) {
   #name, #email {
     width: calc(100% - 10px);
+  }
+
+
+  .skillsContainer>div span {
+    box-shadow: 1px 1px 1px 0px black inset, -4px -1px 1px 0px black inset;
   }
 
   .skillsContainer > div {
