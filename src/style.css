@@ -140,44 +140,51 @@ button {
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: end;
 }
 .skillsContainer>div {
-  width: 150px;
-  height: max-content;
-  background-color: #f0f0f0;
-  color: black;
+  width: 350px;
+  height: 350px;
+  background-color: #2020204d;
+  color: white;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 15px;
-  margin-top: 40px;
+  text-shadow: 1px 1px 5px black;
+  
 }
 .skillsContainer>div span {
   display: flex;
-  width: 100%;
-  border: 1px solid black;
+  width: 65%;
+  border: 2px solid white;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 1px 0px black inset, -4px -1px 1px 0px black inset;
 }
-.rookie span {
-  height: 50px;
-}
+
+.rookie span,
 .elite span {
-  height: 65px;
+  height: calc(100% / 3);
 }
 .master span {
-  height: 60px;
+  height: calc(100% / 5);
 }
 
 .skillsContainer>div::after {
   position: absolute;
-  top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  right: 0;
+  width: 34%;
+  height: 97.8%;
   color: white;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  border: 4px solid white;
+  box-shadow: 1px 1px 1px 0px black inset, -1px -1px 1px 0px black inset;
 }
 .rookie::after {
   content: 'rookie';
@@ -340,5 +347,10 @@ textarea {
 @media screen and (max-width: 460px) {
   #name, #email {
     width: calc(100% - 10px);
+  }
+
+  .skillsContainer > div {
+    min-width: 330px;
+    height: 330px;
   }
 }
